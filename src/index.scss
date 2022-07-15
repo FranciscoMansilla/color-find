@@ -1,0 +1,18 @@
+
+/*abstracts */
+@import './scss/abstracts/variables';
+@import './scss/abstracts/mixins';
+
+/*base */
+@import './scss/base/base';
+@import './scss/base/resets';
+
+/* settings*/
+@import  './scss/settings/breakpoints';
+
+
+/*components*/
+@import './scss/components/Home.scss';
+@import './scss/components/NavBar.scss';
+@import './scss/components/Contents.scss';
+@import './scss/components/Button.scss';
