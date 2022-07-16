@@ -1,0 +1,21 @@
+.card{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: .6rem;
+  height: 14rem;
+  width: 12rem;
+  Overflow: hidden;
+  div{
+    padding: .5rem;
+  }
+  img{
+    object-fit: contain;
+  }
+  h3{
+    padding-bottom: .4rem;
+  }
+  p{
+    font-size: small;
+  }
+}

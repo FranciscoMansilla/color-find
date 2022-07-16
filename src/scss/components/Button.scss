@@ -1,5 +1,15 @@
 .button{
-  padding: 0.2rem 1rem;
-  border: 1px solid white;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.4rem 1.4rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: ease-in-out;
+  transition-duration: 200ms;
+  font-size: medium;
+  &:hover{
+    transform: scale(1.03);
+    filter: brightness(1.1);
+  }
 }
