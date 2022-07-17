@@ -7,9 +7,9 @@ interface State{
 }
 
 const initialState : State = {
-  colorPrimary: '#ffffff',
+  colorPrimary: '#dbe4ff',
   colorSecondary:'#4a88d9',
-  colorTertiary: '#ffb570',
+  colorTertiary: '#ffffff',
 }
 
 const reducer = (state: any = initialState, action: any) => {
