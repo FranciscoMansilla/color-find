@@ -6,6 +6,7 @@ const Button = ()=>{
     <div className="button" style={{
         border: "2px solid "+colorSecondary,
         background: colorTertiary,
+        color: colorSecondary
       }}>
       A Button 
     </div>
