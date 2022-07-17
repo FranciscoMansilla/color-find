@@ -1,11 +1,18 @@
 .card{
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
   border-radius: .6rem;
   height: 14rem;
   width: 12rem;
   Overflow: hidden;
+  margin-right: 15rem;
+  transition: ease-in-out;
+  transition-duration: 200ms;
+  &:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+    filter: brightness(1.1);
+  }
   div{
     padding: .5rem;
   }
