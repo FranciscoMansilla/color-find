@@ -3,7 +3,7 @@ import { useSelector } from "react-redux"
 const Button = ()=>{
   const {colorPrimary, colorSecondary , colorTertiary } = useSelector((state:any)=>state)
   return(
-    <div className="button" style={{
+    <div className=" button shadow" style={{
         border: "2px solid "+colorSecondary,
         background: colorTertiary,
         color: colorSecondary

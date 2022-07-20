@@ -5,6 +5,10 @@
   overflow: hidden;
   transition: ease-in-out;
   transition-duration: 200ms;
+  margin-right: 2rem;
+  @media(max-width: 600px){
+    width: 20rem;
+  }
   &:hover{
     cursor: pointer;
     transform: scale(1.03);

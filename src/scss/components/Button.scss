@@ -9,6 +9,12 @@
   transition-duration: 200ms;
   font-size: medium;
   margin: 5rem;
+  @media(max-width: 1450px){
+    margin: 1rem;
+  }
+  @media(max-width: 440px){
+    margin: 2rem;
+  }
   &:hover{
     transform: scale(1.03);
     filter: brightness(1.1);

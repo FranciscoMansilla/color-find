@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from "react-redux"
 import { bindActionCreators } from "redux";
 import * as actionCreator from '../../redux/actions/actions'
+import copy from '../../assets/copy.png'
 
 const ButtonContainer = ()=>{
   const dispatch = useDispatch()
@@ -26,32 +27,55 @@ const ButtonContainer = ()=>{
         return
     }
   }
+  const {colorPrimary, colorSecondary , colorTertiary } = useSelector((state:any)=>state)
+  const handleCopy = (e:any)=>{
+    if(e.target.name==='1'){
+      console.log('copy1')
+      navigator.clipboard.writeText(colorPrimary)
+    }
+    if(e.target.name==='2'){
+      console.log('copy2')
+      navigator.clipboard.writeText(colorSecondary)
+    }
+    if(e.target.name==='3'){
+      console.log('copy3')
+      navigator.clipboard.writeText(colorTertiary)
 
+    }
+  }
   return(
-    <div className="ButtonContainer">
+    <div className="ButtonContainer" style={{
+      color: colorSecondary
+    }}>
       <div className="buttonBlock">
         <h3>Primary Color</h3>
-        <input onChange={handleChange} type="color" name="1" value={state.colorPrimary}/>
-        <label>
-        {state.colorPrimary}
-          <img src="" alt="" />
-        </label>
+        <input className="shadow" onChange={handleChange} type="color" name="1" value={state.colorPrimary}/>
+        <div>
+          {state.colorPrimary}
+          <button name="1" onClick={handleCopy}>
+            <img src={copy} alt="" />
+          </button>
+        </div>
       </div>
       <div className="buttonBlock">
         <h3>Secondary Color</h3>
-        <input onChange={handleChange} type="color" name="2" value={state.colorSecondary}/>
-        <label>
-        {state.colorSecondary}
-          <img src="" alt="" />
-        </label>
+        <input className="shadow" onChange={handleChange} type="color" name="2" value={state.colorSecondary}/>
+        <div>
+          {state.colorSecondary}
+          <button name="2" onClick={handleCopy}>
+            <img src={copy} alt="" />
+          </button>
+        </div>
       </div>
       <div className="buttonBlock">
         <h3>Tertiary Color</h3>
-        <input onChange={handleChange} type="color" name="3" value={state.colorTertiary}/>
-        <label>
-        {state.colorTertiary}
-          <img src="" alt="" />
-        </label>
+        <input className="shadow" onChange={handleChange} type="color" name="3" value={state.colorTertiary}/>
+        <div>
+          {state.colorTertiary}
+          <button name="3" onClick={handleCopy}>
+            <img src={copy} alt="" />
+          </button>
+        </div>
       </div>
     </div>
   )

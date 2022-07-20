@@ -5,7 +5,7 @@ const Toast = ()=>{
   const {colorPrimary, colorSecondary , colorTertiary } = useSelector((state:any)=>state)
 
   return(
-    <div className="toast" style={{
+    <div className="toast shadow" style={{
       border: "2px solid "+colorSecondary,
       color: colorSecondary,
     }}>

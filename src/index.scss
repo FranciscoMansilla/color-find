@@ -3,6 +3,7 @@
 @import './scss/abstracts/variables';
 @import './scss/abstracts/mixins';
 
+
 /*base */
 @import './scss/base/base';
 @import './scss/base/resets';
@@ -20,4 +21,8 @@
 @import './scss/components/Card.scss';
 @import './scss/components/Toast.scss';
 @import './scss/components/Footer.scss';
+@import './scss/components/shadow.scss';
 
+html{
+  overflow-x: hidden;
+}

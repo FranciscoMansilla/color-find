@@ -14,7 +14,7 @@ const Footer = ()=>{
         <a target="_blank" href="https://www.linkedin.com/in/franciscomansilla/" style={{
           color: colorSecondary
         }}>LinkedIn</a>
-        <a target="_blank" href="https://github.com/FranciscoMansilla" style={{
+        <a target="_blank" href="https://github.com/FranciscoMansilla/color-find" style={{
           color: colorSecondary
         }}>GitHub</a>
       </div>

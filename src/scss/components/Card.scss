@@ -8,6 +8,15 @@
   margin-right: 15rem;
   transition: ease-in-out;
   transition-duration: 200ms;
+  @media(max-width: 1150px){
+    margin-right: 5rem;
+  }
+  @media(max-width: 600px){
+    margin-top: 2rem;
+  }
+  @media(max-width: 440px){
+    margin-right: 0rem;
+  }
   &:hover{
     cursor: pointer;
     transform: scale(1.03);
